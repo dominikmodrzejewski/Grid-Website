@@ -1,26 +1,60 @@
 @media (min-width: 576px) {
-    .cards {
+    .info {
+        grid-template-areas:
+            "title box"
+            "title box"
+            "title box";
+        padding: 10em 2em;
 
         &__box {
-            padding: 10em 2em;
+            display: grid;
+            justify-content: end;
         }
 
-        &__card {
+        &__title {
+            padding: 0 1em;
+        }
+
+        &__box-img, &__box-text {
+            max-width: 500px;
+        }
+
+        &__bg-icon {
+            position: absolute;
+            display: block;
+            opacity: 0.05;
+            z-index: -5;
+
             &--one {
-                grid-row: 1 / 2;
-                grid-column: 1 / 4;
+                top: 14%;
+                left: 10px;
+                width: 20%;
+                animation: rotate-right 160s infinite linear;
             }
 
             &--two {
-                grid-row: 1 / 2;
-                grid-column: 4 / 7;
+                bottom: 10%;
+                left: 10%;
+                width: 30%;
+                animation: rotate-left 140s infinite linear;
             }
 
             &--three {
-                grid-row: 1 / 2;
-                grid-column: 7 / 10;
+                top: 26%;
+                left: 16%;
+                width: 50%;
+                animation: rotate-left 160s infinite linear;
+            }
 
+            &--four {
+                top: 55%;
+                left: -10%;
+                width: 15%;
+                animation: rotate-right 140s infinite linear;
             }
         }
     }
+
+
+
 }
