@@ -217,7 +217,7 @@ h1.company-name {
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #fff;
-  z-index: 500;
+  z-index: 5000;
 }
 
 .nav-mobile {
